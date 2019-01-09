@@ -6,9 +6,6 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
-//@Entity
-//@Inheritance(strategy = InheritanceType.JOINED
-//@DiscriminatorColumn(name="EmployeeType")
 public class Employee {
     @Id
     @GeneratedValue

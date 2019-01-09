@@ -10,8 +10,7 @@ public class Review {
 
     private String description;
 
-    @Enumerated(EnumType.STRING)
-    private ReviewRating rating;
+    private String rating;
 
     @ManyToOne
     private Course course;
@@ -19,7 +18,7 @@ public class Review {
     public Review() {
     }
 
-    public Review(String description, ReviewRating rating) {
+    public Review(String description, String rating) {
         this.description = description;
         this.rating = rating;
     }
@@ -36,11 +35,11 @@ public class Review {
         this.description = description;
     }
 
-    public ReviewRating getRating() {
+    public String getRating() {
         return rating;
     }
 
-    public void setRating(ReviewRating rating) {
+    public void setRating(String rating) {
         this.rating = rating;
     }
 
